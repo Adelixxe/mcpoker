@@ -124,7 +124,7 @@ Mcpoker.on("guildMemberAdd", member => {
     member.guild.defaultChannel.sendMessage(`Welcome to the server, ${member.user.username}! Type $help to get started...`);
 })
 
-Mcpoket.on("message", message => {
+Mcpoker.on("message", message => {
     /*===================
     [onMessage Functions]
     ===================*/
