@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 const Evaluator = require("poker-evaluator");
-const cardBot = new Discord.Client();
+const Mcpoker = new Discord.Client();
 const prefix = "$";
 
 /*=================
@@ -111,9 +111,9 @@ function isTurn(user) {
     }
 }
 
-cardBot.on("ready", () => {
-    console.log("Card Bot v1.2 loaded.");
-    cardBot.user.setGame("$help");
+Mcpoker.on("ready", () => {
+    console.log("McPoker v1.2 loaded.");
+    Mcpoker.user.setGame("$help");
 });
 
 /*================
@@ -711,7 +711,7 @@ cardBot.on("message", message => {
 
     if (command === "restart") {
         send("*CardBot restarting...* (This may take up to a minute)");
-        cardBot.destroy();
+        Mcpoker.destroy();
     }
     
     if (command === "commands" || command === "clist") {
@@ -767,4 +767,4 @@ To learn more about how to play, check out the commands with **$commands**!`,
     }
 });
 
-cardBot.login("TOKEN");
+Mcpoker.login("TOKEN");
