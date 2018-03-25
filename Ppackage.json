@@ -1,0 +1,12 @@
+{
+  "name": "cardBot",
+  "version": "1.1.0",
+  "description": "Cousin de McJazz",
+  "main": "app.js",
+  "dependencies": {
+    "discord.js": "^11.0.0",
+    "poker-evaluator": "^0.3.1"
+  },
+  "author": "Adelixxe",
+  "license": "MIT"
+}
