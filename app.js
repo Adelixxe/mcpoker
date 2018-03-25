@@ -120,11 +120,11 @@ Mcpoker.on("ready", () => {
 [List of Commands]
 ================*/
 
-cardBot.on("guildMemberAdd", member => {
+Mcpoker.on("guildMemberAdd", member => {
     member.guild.defaultChannel.sendMessage(`Welcome to the server, ${member.user.username}! Type $help to get started...`);
 })
 
-cardBot.on("message", message => {
+Mcpoket.on("message", message => {
     /*===================
     [onMessage Functions]
     ===================*/
